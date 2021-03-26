@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hotza Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+ </head>
+    <body>
+        <section id="banner">
+            <img src="images/frio.jpg" alt="logo" class="logo">
+            <div class="banner-text">
+                <h1>Hotza Technology</h1>
+                <p>“The Earth is what we all have in common.”
+                    —Wendell Berry</p>
+            </div>
+    </section>
+
+    <!--sidenav-->
+
+    <div id="sideNav">
+        <nav>
+        <ul>
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#story">OUR STORY</a></li>
+            <li><a href="#feature">FEATURES</a></li>
+            <li><a href="#device">DEVICE</a></li>
+            <li><a href="#products">PRODUCTS</a></li>
+            <li><a href="#testimonial">TESTIMONIALS</a></li>
+            <li><a href="#footer">MEET US</a></li>
+
+        </ul>
+    </nav>
+</div>
+
+<div id="menuBtn">
+    <img src="images/button.png" alt="button" id="menu">
+</div>
+
+<!--Our Story-->
+<section id="story">
+ <div class="story-section">
+    <h1>The Story Of Our Company</h1>
+    <span class="border"></span>
+    <div class="ps">
+        <a href="#p1"><img src="p1.png" width="200" height="200" alt="daniel"></a>
+        <a href="#p2"><img src="p2.jpg" width="200" height="200" alt="marie"></a>
+        <a href="#p3"><img src="p3.jpeg" width="200" height="200" alt="ignacio"></a>
+        <br>
+        <p>
+            We are Daniel, Marie and Ignacio. We all three came from different experiences and backgrounds but we share one common goal, try to reduce pollution. We decided one of the best way to fix this was to create an eco friendly battery. Consequently in March 2020 <em> Hotza Technology</em> was born. 
+            We leased a building in Dublin, got some scary bank loans, spent all our money on ideas and proyects. Our biggest mission when we set up <em> Hotza Technology</em> was to make other people as passionate about environment as we are. And that is still our biggest mission today.
+         </p>
+
+    </div>
+    </div>
+</section>
+<!--Features-->
+
+  <section id="feature">
+    <div class="title-text">
+        <p>FEATURES</p>
+       </div> 
+        <div class="feature-box">
+            <div class="features">
+                <h1>New Technologies</h1>
+                <div class="features-description">
+                    <div class="feature-icon">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>Using renewable power, our batteries could provide a clean and carbon-neutral source of energy and replace the natural gas, diesel, and gasoline used in ships, trucks, buses, and cars.</p>
+                    </div>
+                </div>
+
+                <h1>Environmentally friendly</h1>
+                <div class="features-description">
+                    <div class="feature-icon">
+                    <i class="fa fa-globe"></i>
+                    </div>
+                    <div class="feature-text">
+                    <p>Being environmentally conscious is not all about plastic bags; it’s about making everyday choices that will — quite literally — determine our success or failure as a species. We can be more conscious about reducing pollution, protecting wildlife, conserving natural resources.</p>
+                    </div>
+                    </div>
+
+                    <h1>Bitcoin Payment</h1>
+                    <div class="features-description">
+                    <div class="feature-icon">
+                    <i class="fa fa-btc"></i>
+                    </div>
+                    <div class="feature-text">
+                    <p>Bitcoin is an alternative virtual payment solution and we now accept bitcoins for all products in our store as well as our other methods including PayPal and Credit Cards.</p>
+                    </div>
+
+                </div>
+          </div>
+        <div class="features-img">
+            <img src="images/Technology.jpg" alt="battery" class="battery">
+       </div>
+    </div>
+</section>
+
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+                   if(sideNav.style.right=="-250px"){
+                       sideNav.style.right  = "0";
+                   }
+                   else {
+                       sideNav.style.right = "-250px"
+                   }
+               }
+
+
+               var scroll = new SmoothScroll('a[href*="#"]', {
+   speed: 1000,
+   speedAsDuration: true
+});
+</script>
+
+
+<!--Device-->
+
+<section id="device">
+    <div class="title-text">
+    <p>DEVICE</p>
+    <h1>Innovation</h1>
+    </div>
+    <div class="device-box">
+        <div class="single-device">
+            <img src="images/rain.jpg" alt="rain drops">
+            <div class="overlay"></div>
+            <div class="device-description">
+                <h3>Rain as Energy</h3>
+                <hr>
+                <p>If you can make energy from wind, why not from rainwater? In the water cycle, water evaporates via solar energy and gains potential energy that is then lost again when the water precipitates.Our smart device generates electric power from raindrops. </p>
+                <p></p>
+            </div>
+        </div>
+        <div class="single-device">
+            <img src="images/solarcharger.jpg" alt="solar">
+            <div class="overlay"></div>
+            <div class="device-description">
+                <h3>Solar Charger</h3>
+                <hr>
+                <p>Our solar charge are placed around the city and allows people to recharged their batteries during the day.</p>
+            </div>
+
+        </div>
+        <div class="single-device">
+            <img src="images/robert-serbinenko-hpL2v6HEKNg-unsplash.jpg" alt="wind energy">
+            <div class="overlay"></div>
+            <div class="device-description">
+                <h3>Charge while in Motion</h3>
+                <hr>
+                <p>Wind power or wind energy is the use of wind to provide mechanical power through wind turbines to turn electric generators for electrical power. We have now introduced our self charging battery while driving. Wind power is a popular sustainable, renewable source of power that has a much smaller impact on the environment compared to burning fossil fuels.</p>
+            </div>
+
+        </div>
+        <div class="single-device">
+                <div class="overlay"></div>
+                <img src="images/claudio-schwarz-purzlbaum-M3EJTWXpZEk-unsplash.jpg" alt="battery">
+               <div class="device-description">
+                    <h3>3IN1</h3>
+                    SMALL BUT POWERFULL
+                    <hr>
+                    <p>Our 3IN1 intelligent batteries have a multi-stage cycle that analyses, charges, protects and repairs batteries. This means that instead of just adding charge, the battery charger responds to the condition of the battery, then applies the fastest charge available using either the rain, the wind or the sun as energy.</p>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+<!--Products-->
+
+<section id="products">
+    <div class="title-text">
+    <p>PRODUCTS</p>
+    <h1>"Ideas that have been transformed into practical reality"</h1>
+    </div>
+
+    <div class="products-box">
+        <div class="single-products">
+            <img src="images/applewatch.jpg" alt="watch">
+            <div class="overlay"></div>
+            <div class="products-description">
+                <h3>Check Fast</h3>
+                <hr>
+                <p>Check Fast by Apple is way of controlling your 3IN1 car battery from anywhere.</p>
+                <a href="https://support.apple.com/en-gb/HT204608">Product Information</a>
+
+            </div>
+        </div>
+        <div class="single-products">
+            <img src="images/drone.jpg" alt="drone">
+            <div class="overlay"></div>
+            <div class="products-description">
+                <h3>DJI Drones</h3>
+                <hr>
+                <p>Our partner DJI is using our battery in one of its drones, the Phantom 4 RTK.</p>
+                <a href="https://www.dji.com/ie/phantom-4-rtk?site=brandsite&from=nav">Click here to see more info.</a>
+
+            </div>
+
+        </div>
+        <div class="single-products">
+            <img src="images/ElectricBoard.jpg" alt="board">
+            <div class="overlay"></div>
+            <div class="products-description">
+                <h3>Electric Board</h3>
+                <hr>
+                <p>Boosted USA was able to adapt our 3IN1 battery into his new proyect, an smart board.</p>
+                <a href="https://boostedusa.com/">See our products!</a>
+
+            </div>
+
+         </div>
+
+        </div>
+    
+</section>
+
+
+
+<!--Testimonial-->
+
+ <section id="testimonial">
+    <div class="title-text">
+        <p>TESTIMONIAL</p>
+        <h1>Our Clients</h1>
+    </div>
+    <div class="testimonial-row">
+        <div class="testimonial-column">
+            <div class="user">
+                <img src="images/Elon.jpg" alt="Elon">
+                <div class="user-info">
+                    <h4>Elon Musk <i class="fa fa-twitter"></i></h4>
+                    <small>@EMUSK</small>
+                </div>
+            </div>
+            <p>"Hotza is right now the best battery technology on the market. Charge in seconds, adapting to different conditions." </p>
+        </div>
+        <div class="testimonial-column">
+            <div class="user">
+                <img src="images/Bezos.jpg" alt="Jeff">
+                <div class="user-info">
+                    <h4>Jeff Bezos<i class="fa fa-twitter"></i></h4>
+                    <small>@JBezos</small>
+                </div>
+            </div>
+            <p>"Most energy efficient high performance batteries on the market. The technology is next gen and is actually quite impressive"</p>
+        </div>
+        <div class="testimonial-column">
+            <div class="user">
+                <img src="images/MarkZ.jpg" alt="Mark">
+                <div class="user-info">
+                    <h4>Mark Zuckerberg<i class="fa fa-twitter"></i></h4>
+                    <small>@MarkZ</small>
+                </div>
+            </div>
+            <p>"The performance of the battery is promising, being able to capture energy from natural sources is amazing!!"</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--footer-->
+
+<section id="footer">
+<div class="title-text">
+    <p>CONTACT</p>
+    <h1>Come and Say Hello</h1>
+</div>
+<div class="footer-row">
+<div class="footer-left">
+    <h1>Opening Hours</h1>
+    <p><i class="fa fa-clock-o" aria-hidden="true"></i>
+        Monday to Friday - 9am to 9pm</p>
+    <p><i class="fa fa-clock-o" aria-hidden="true"></i>
+        Satuday - 10am to 14pm</p>
+    </div>
+    <div class="footer-right">
+    <h1>Get In Touch</h1>
+    <p><i class="fa fa-map-marker"></i>
+    Cahernane, Killarney, Co. Kerry, V93 E78W, Ireland</p>
+    <br>
+    <a href="mailto:Hotza.Technologies@gmail.com"> Hotza.Technologies@gmail.com</a>
+    <p><i class="fa fa-phone"></i>
+        +353 08754663</p>
+</div>
+</div>
+
+<div class="social-links">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <p>Copyright © 2021 Hotza Technologies. All Rights Reserved</p>
+    
+
+</div>
+</section>
+</body>
+</html>
+
+
